@@ -1,0 +1,91 @@
+import turtle
+
+
+turtle.fillcolor('green')
+turtle.begin_fill()
+for i in range(2):
+    turtle.forward(75)
+    turtle.right(90)
+    turtle.forward(25)
+    turtle.right(90)
+turtle.end_fill()
+turtle.right(90)
+turtle.forward(25)
+text = turtle.textinput('Какого цвета пиксель?', '')
+turtle.begin_fill()
+turtle.fillcolor(text)
+for i in range(4):
+    turtle.forward(25)
+    turtle.left(90)
+turtle.end_fill()
+turtle.forward(25)
+text1 = turtle.textinput('Какого цвета пиксель?', '')
+turtle.begin_fill()
+turtle.fillcolor(text1)
+for i in range(4):
+    turtle.forward(25)
+    turtle.left(90)
+turtle.end_fill()
+turtle.forward(25)
+text2 = turtle.textinput('Какого цвета пиксель?', '')
+turtle.begin_fill()
+turtle.fillcolor(text2)
+for i in range(4):
+    turtle.forward(25)
+    turtle.left(90)
+turtle.end_fill()
+turtle.forward(25)
+turtle.right(90)
+turtle.begin_fill()
+turtle.fillcolor('green')
+for i in range(4):
+    turtle.forward(25)
+    turtle.right(90)
+turtle.end_fill()
+
+turtle.penup()
+turtle.right(180)
+turtle.forward(75)
+turtle.pendown()
+text3 = turtle.textinput('Какого цвета пиксели?', '')
+turtle.begin_fill()
+turtle.fillcolor(text3)
+for i in range(4):
+    turtle.forward(25)
+    turtle.left(90)
+turtle.left(90)
+turtle.end_fill()
+turtle.penup()
+turtle.forward(25)
+turtle.pendown()
+turtle.begin_fill()
+turtle.fillcolor(text3)
+for i in range(4):
+    turtle.forward(25)
+    turtle.left(90)
+turtle.end_fill()
+    
+turtle.fillcolor('white')
+turtle.begin_fill()
+for i in range(4):
+    turtle.forward(25)
+    turtle.right(90)
+turtle.end_fill()
+turtle.right(90)
+turtle.forward(25)
+turtle.fillcolor(text3)
+turtle.begin_fill()
+for i in range(4):
+    turtle.forward(25)
+    turtle.left(90)
+turtle.end_fill()
+
+
+
+
+
+
+
+    
+
+turtle.exitonclick()
