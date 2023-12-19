@@ -1,0 +1,14 @@
+f = open('pokypki.txt', 'r', encoding="utf-8")
+shopping_list = f.readlines()
+formatted_list = []
+for item in shopping_list:
+    # Удаляем символ перевода строки
+    item = item.rstrip('\n')
+    # Форматируем каждую строку и добавляем в новый список
+    formatted_item = '- ' + item + '.'
+    formatted_list.append(formatted_item)
+f.close()
+
+f = open('pokypki.txt', 'w', encoding="utf-8")
+f.write('\n'.join(formatted_list))
+f.close()
